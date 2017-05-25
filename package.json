@@ -1,0 +1,13 @@
+{
+  "name": "Backbone-Carousel",
+  "version": "0.0.1",
+  "description": "Backbone Carousel",
+  "main": "app.js",
+  "author": "dileep k @dileepbui@gmail.com",
+  "dependencies": {
+    "express": "~4.15.3"
+  }
+}
+
+
+

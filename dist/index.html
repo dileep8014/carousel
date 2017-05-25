@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        width: 412px;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+      .corousel {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+      .images, .row-container, .items {
+        display: flex;
+      }
+      .images {
+        overflow: hidden;
+        transition: 2s margin ease-in-out;
+      }
+      .items {
+         margin: 20px 0;
+      }
+      img {
+        width : 100px;
+        height: 100px;
+      }
+      .carousel_nav {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        margin-top: -17px;
+        left: 0;
+        z-index: 1;
+      }
+      .nav {
+        position: absolute;
+        top: 0;
+        color: #000;
+        background: #FFF;
+        padding: 8px 12px;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: .8rem;
+        transition: padding .25s ease;
+      }
+      .nav--left {
+        border-radius: 0px 3px 3px 0px;
+      }
+      .nav--right {
+        right: 0;
+        border-radius: 3px 0px 0px 3px;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="container">
+    <div class="corousel">
+      <div class="images"></div>
+      <div class="carousel_nav">
+        <a href="#" id="nav-left" class="nav nav--left">Previous</a>
+        <a href="#" id="nav-right" class="nav nav--right">Next</a>
+      </div>
+    </div>
+  </div>
+  <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>
+
+  <script src="/js/main.js"></script>
+  </body>
+</html>
+
+
